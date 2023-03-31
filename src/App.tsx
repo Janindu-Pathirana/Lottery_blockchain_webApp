@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./app.css";
 
 function App() {
+
+  const chooseWinner = () => {
+
+  }
+
+  const buyTicket = () => { }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <div className='text'>Buy ticket</div>
+        <input className='input' />
+        <button className='button' onClick={buyTicket}>buy</button>
+      </div>
+
+      <div>
+        <div className='text'>choose winner</div>
+        <button className='button' onClick={chooseWinner}>choose</button>
+      </div>
+
+      <div>
+        <div className='text bold'>
+          winner is </div>
+      </div>
+    </>
   );
 }
 
 export default App;
+
+
